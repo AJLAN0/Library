@@ -27,8 +27,8 @@ def index(request):
 def list_books(request):
  return render(request, 'bookmodule/list_books.html')
 
-def viewbook(request):
- return render(request, 'bookmodule/one_book.html')
+def viewbook(request,book_id):
+ return render(request, 'bookmodule/one_book.html', {"book_id": book_id})
 
 def aboutus(request):
  return render(request, 'bookmodule/aboutus.html')
