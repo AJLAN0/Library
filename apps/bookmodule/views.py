@@ -32,3 +32,6 @@ def viewbook(request,book_id):
 
 def aboutus(request):
  return render(request, 'bookmodule/aboutus.html')
+
+def html5(request):
+ return render(request, 'bookmodule/html5/links.html')
